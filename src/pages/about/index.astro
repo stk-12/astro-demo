@@ -1,0 +1,25 @@
+---
+import Layout from '../../layouts/Layout.astro';
+// import '../../css/style.css';
+const pageTitle = "Astroについて";
+const pageClass = "about";
+---
+
+<style>
+  .lead {
+    text-align: center;
+  }
+</style>
+
+<Layout pageTitle={ pageTitle } pageClass={ pageClass }>
+  <div class="page">
+    <div class="page-ttl">
+      <h1>{ pageTitle }</h1>
+    </div>
+  </div>
+  <div class="contents">
+    <div class="inner">
+      <p class="lead">Astro は、スピードを重視して設計されたオールインワンの Web フレームワークです。<br>お気に入りの UI コンポーネントとライブラリを利用して、どこからでもコンテンツを取得し、どこにでもデプロイできます。</p>
+    </div>
+  </div>
+</Layout>
