@@ -3,7 +3,7 @@ import Navigation from "../components/Navigation.astro";
 ---
 
 <header>
-  <p class="logo en">Logo</p>
+  <p class="logo en"><a href="/">Logo</a></p>
   <nav>
     <Navigation />
   </nav>
@@ -22,8 +22,10 @@ import Navigation from "../components/Navigation.astro";
     padding: 0 20px;
     border-bottom: 1px solid #333;
   }
-  .logo {
+  .logo a {
     font-size: 30px;
     font-weight: 700;
+    text-decoration: none;
+    color: #333;
   }
 </style>

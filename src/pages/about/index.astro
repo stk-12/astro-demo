@@ -1,15 +1,9 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-// import '../../css/style.css';
+import Button from '../../components/Button.astro';
 const pageTitle = "Astroについて";
 const pageClass = "about";
 ---
-
-<style>
-  .lead {
-    text-align: center;
-  }
-</style>
 
 <Layout pageTitle={ pageTitle } pageClass={ pageClass }>
   <div class="page">
@@ -20,6 +14,19 @@ const pageClass = "about";
   <div class="contents">
     <div class="inner">
       <p class="lead">Astro は、スピードを重視して設計されたオールインワンの Web フレームワークです。<br>お気に入りの UI コンポーネントとライブラリを利用して、どこからでもコンテンツを取得し、どこにでもデプロイできます。</p>
+      <Button
+        href="/works/"
+        title="導入事例"
+      />
     </div>
   </div>
 </Layout>
+
+<style>
+  .lead {
+    text-align: center;
+  }
+  .btn {
+    margin: 40px auto;  // 効かない
+  }
+</style>
