@@ -4,7 +4,7 @@ const { href, title } = Astro.props;
 
 <a href={ href } class="btn"><span>{ title }</span></a>
 
-<style>
+<style lang="scss">
   .btn {
     display: flex;
     justify-content: center;
@@ -18,14 +18,16 @@ const { href, title } = Astro.props;
     text-decoration: none;
 
     margin: 60px auto;
-  }
-  .btn span {
-    color: #fff;
-  }
-  .btn:hover {
-    background: #fff;
-  }
-  .btn:hover span {
-    color: #333;
+    
+    span {
+      color: #fff;
+    }
+
+    &:hover {
+      background: #fff;
+      span {
+        color: #333;
+      }
+    }
   }
 </style>
